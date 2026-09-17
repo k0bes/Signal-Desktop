@@ -530,3 +530,75 @@
   --axo-color-legacy-signal-chat-message-bg:   light-dark(#8889B4, #444664);
   --axo-color-legacy-warning-badge:            light-dark(#C84118, #EB977D);
 }
+
+@layer theme {
+  .dark-theme {
+    color-scheme: dark;
+
+    --axo-color-brand-primary: #cba6f7;
+
+    --axo-color-label-primary: #cdd6f4;
+    --axo-color-label-secondary: #bac2de;
+    --axo-color-label-placeholder: #7f849c;
+    --axo-color-label-disabled: #6c7086;
+    --axo-color-label-primary-oncolor: #11111b;
+    --axo-color-label-secondary-oncolor: #313244;
+    --axo-color-label-accent: #b4befe;
+    --axo-color-label-affirmative: #a6e3a1;
+    --axo-color-label-warning: #f9e2af;
+    --axo-color-label-safety: #fab387;
+    --axo-color-label-destructive: #f38ba8;
+
+    --axo-color-surface-primary: #1e1e2e;
+    --axo-color-surface-secondary: #181825;
+    --axo-color-surface-tertiary: #313244;
+    --axo-color-surface-quaternary: #45475a;
+    --axo-color-surface-card: #313244;
+    --axo-color-surface-message-incoming: #313244;
+    --axo-color-surface-message-outgoing: #585b70;
+
+    --axo-color-material-primary: rgb(30 30 46 / 90%);
+    --axo-color-material-secondary: rgb(24 24 37 / 90%);
+    --axo-color-material-tertiary: rgb(49 50 68 / 90%);
+    --axo-color-material-tertiary-pressed: rgb(69 71 90 / 90%);
+    --axo-color-material-quaternary: rgb(88 91 112 / 90%);
+    --axo-color-material-quaternary-pressed: rgb(108 112 134 / 90%);
+    --axo-color-material-dim-primary: rgb(69 71 90 / 90%);
+    --axo-color-material-dim-secondary: rgb(88 91 112 / 90%);
+    --axo-color-material-dialog: rgb(49 50 68 / 95%);
+    --axo-color-material-warning: rgb(69 62 48 / 90%);
+
+    --axo-color-fill-primary: rgb(166 173 200 / 12%);
+    --axo-color-fill-primary-pressed: rgb(166 173 200 / 16%);
+    --axo-color-fill-secondary: rgb(166 173 200 / 20%);
+    --axo-color-fill-secondary-pressed: rgb(166 173 200 / 24%);
+    --axo-color-fill-tertiary: rgb(166 173 200 / 28%);
+    --axo-color-fill-tertiary-pressed: rgb(166 173 200 / 32%);
+    --axo-color-fill-control: rgb(166 173 200 / 12%);
+    --axo-color-fill-control-pressed: rgb(166 173 200 / 16%);
+    --axo-color-fill-inverted: #cdd6f4;
+    --axo-color-fill-inverted-pressed: #bac2de;
+    --axo-color-fill-overlay: rgb(17 17 27 / 64%);
+
+    --axo-color-fill-accent: #cba6f7;
+    --axo-color-fill-accent-pressed: #b4befe;
+    --axo-color-fill-accent-bright: #f5c2e7;
+    --axo-color-fill-accent-bright-pressed: #f2aede;
+    --axo-color-fill-accent-tint: rgb(203 166 247 / 16%);
+    --axo-color-fill-accent-tint-pressed: rgb(203 166 247 / 22%);
+    --axo-color-fill-affirmative: #a6e3a1;
+    --axo-color-fill-affirmative-pressed: #94e2d5;
+    --axo-color-fill-warning-bright: #f9e2af;
+    --axo-color-fill-warning-bright-pressed: #fab387;
+    --axo-color-fill-safety: #fab387;
+    --axo-color-fill-safety-pressed: #f5c2e7;
+    --axo-color-fill-destructive: #f38ba8;
+    --axo-color-fill-destructive-pressed: #eba0ac;
+
+    --axo-color-border-primary: rgb(166 173 200 / 12%);
+    --axo-color-border-secondary: rgb(166 173 200 / 24%);
+    --axo-color-border-tertiary: rgb(166 173 200 / 40%);
+    --axo-color-border-selected: #cba6f7;
+    --axo-color-border-focused-outer: #b4befe;
+  }
+}
