@@ -59,10 +59,7 @@ export function hasBuildExpired({
   now,
   logger,
 }: HasBuildExpiredOptionsType): boolean {
-  if (
-    getEnvironment() !== Environment.PackagedApp &&
-    buildExpirationTimestamp === 0
-  ) {
+  if (getEnvironment() !== Environment.PackagedApp) {
     return false;
   }
 

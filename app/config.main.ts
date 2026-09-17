@@ -28,7 +28,10 @@ if (app.isPackaged) {
 }
 
 // Set environment vars to configure node-config before requiring it
-process.env.NODE_ENV = getEnvironment();
+process.env.NODE_ENV =
+  getEnvironment() === Environment.Test
+    ? Environment.Test
+    : Environment.PackagedApp;
 
 if (process.env.NODE_ENV === Environment.Test) {
   // Necessary for `tsx` to work in preload (there are no worker_threads)
@@ -60,6 +63,15 @@ process.env.NODE_CONFIG_DIR = join(getAppRootDir(), 'config');
 // See: https://github.com/evanw/esbuild/issues/2011
 // oxlint-disable-next-line typescript/no-var-requires
 const config: Config = require('config');
+
+if (getEnvironment() === Environment.Development) {
+  const mutableConfig = config as unknown as {
+    storageProfile: string;
+    openDevTools: boolean;
+  };
+  mutableConfig.storageProfile = 'development';
+  mutableConfig.openDevTools = true;
+}
 
 if (getEnvironment() !== Environment.PackagedApp) {
   config.util.getConfigSources().forEach(source => {
